@@ -20,7 +20,7 @@ interface CategoryPageProps {
     sizeId: string;
   };
 }
-
+export const revalidate = 0;
 const CategoryPage = async ({ params, searchParams }: CategoryPageProps) => {
   const products = await getProducts({
     categoryId: params.categoryId,
